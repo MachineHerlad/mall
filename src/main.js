@@ -6,6 +6,8 @@ import store from "./store";
 import toast from "./components/common/toast"
 import FastClick from "fastclick"
 import VueLazyload from "vue-lazyload";
+import vant from "vant";
+import "vant/lib/index.css";
 
 Vue.config.productionTip = false
 //添加事件总线对象
@@ -21,6 +23,10 @@ FastClick.attach(document.body)
 Vue.use(VueLazyload, {
   loading: require('./assets/img/home/loading.png')
 })
+
+//使用vant
+Vue.use(vant)
+
 new Vue({
   render: h => h(App),
   router,

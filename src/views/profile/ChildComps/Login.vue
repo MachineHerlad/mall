@@ -1,6 +1,7 @@
 <template>
   <div class="login">
       <div class="user-pic">
+        <img src="~assets/img/profile/user_icon.svg" alt="">
 <!--        <van-image :src="defaultPic" class="user-pic-img" fit="cover" round/>-->
       </div>
     <div class="user-info">
@@ -21,12 +22,132 @@ export default {
   name: "Login",
   data() {
     return{
-      defaultPic: require("~assets/img/profile/user.png")
+      //defaultPic: require("~assets/img/profile/user.png")
     }
   }
 }
 </script>
 
 <style scoped>
+.login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  padding: 0 20px;
+  background-color: var(--color-high-text)
+}
 
+.user-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #c6c6c6;
+}
+
+.user-pic img {
+  width: 40px;
+  height: 40px;
+}
+
+.user-info {
+  font-size: 16px;
+  color: white;
+}
+
+.user-info p:last-child {
+  margin-left: 3px;
+}
+
+.user-info .phone-num {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.icon-phone {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+.profile-arrow-right {
+  position: absolute;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.profile-arrow-right img{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+/*.login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  padding: 0 20px;
+  background-color: #ff8198;
+}
+
+.user-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.user-pic .user-pic-img {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.user-info {
+  font-size: 16px;
+  margin-left: 20px;
+  color: white;
+}
+
+.user-info p:last-child {
+  margin-left: 3px;
+}
+
+.user-info .phone-num {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.icon-phone {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.profile-arrow-right {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.profile-arrow-right img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}*/
 </style>
